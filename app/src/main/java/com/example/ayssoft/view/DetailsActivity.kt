@@ -42,7 +42,6 @@ class DetailsActivity : AppCompatActivity() {
 
             val intent = Intent(this, CardActivity::class.java)
             startActivity(intent)
-
         }
     }
 }
