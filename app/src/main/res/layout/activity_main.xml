@@ -45,10 +45,10 @@
         app:spanCount="3" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/filterButton"
         android:layout_width="55dp"
         android:layout_height="33dp"
-        android:background="@drawable/filterr"
+        android:background="@drawable/filter"
         android:contentDescription="@string/filter"
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
