@@ -13,7 +13,7 @@ import com.example.ayssoft.R
 import com.example.ayssoft.model.ProductModel
 import com.example.ayssoft.view.DetailsActivity
 
-class RecyclerViewAdapter(private val productList:ArrayList<ProductModel>,private val listener:Listener): RecyclerView.Adapter<RecyclerViewAdapter.RowHolder>() {
+class RecyclerViewAdapter(private var productList:ArrayList<ProductModel>,private val listener:Listener): RecyclerView.Adapter<RecyclerViewAdapter.RowHolder>() {
 
      interface Listener{
          fun onItemClick(productModel: ProductModel)
@@ -37,8 +37,8 @@ class RecyclerViewAdapter(private val productList:ArrayList<ProductModel>,privat
             Glide.with(itemView.context).load(imageUrl).into(productImage)
 
 
-        }
 
+        }
 
     }
 
@@ -55,6 +55,11 @@ class RecyclerViewAdapter(private val productList:ArrayList<ProductModel>,privat
     override fun onBindViewHolder(holder: RowHolder, position: Int) {
         holder.bind(productList[position],colors,position,listener)
 
+    }
+    fun setFilteredList(productList: ArrayList<ProductModel>){
+
+        this.productList =productList
+        notifyDataSetChanged()
     }
 
 

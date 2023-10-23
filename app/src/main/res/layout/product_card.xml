@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/alata"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/product_price"
@@ -38,6 +38,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/alata"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+          />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
