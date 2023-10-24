@@ -18,4 +18,4 @@ Bu projede aşağıdaki teknolojiler kullanılmıştır:
 
 ## Kullanılan Mimari Dizayn
 
-Bu proje, Model-View-ViewModel (MVVM) mimari desenini kullanmaktadır. MVVM, kullanıcı arayüzü (View), iş mantığı (ViewModel) ve veri kaynağı (Model) arasında net bir ayrım sağlar. Bu, kodun düzenli ve bakımı kolay olmasına yardımcı olur.camelCase notasyonu ile okunabilir bir kod düzeni oluşturmaya çalıştım.
+Bu proje, Model-View-ViewModel (MVVM) mimari desenini kullanmaktadır. MVVM, kullanıcı arayüzü (View), iş mantığı (ViewModel) ve veri kaynağı (Model) arasında net bir ayrım sağlar. Bu, kodun düzenli ve bakımı kolay olmasına yardımcı olur.camelCase notasyonu ile okunabilir bir kod düzeni oluşturmaya gayret gösterilmiştir.
