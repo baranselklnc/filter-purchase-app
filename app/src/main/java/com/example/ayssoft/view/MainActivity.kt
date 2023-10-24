@@ -8,11 +8,9 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.Spinner
 import androidx.appcompat.widget.SearchView
 
-import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -44,6 +42,8 @@ class MainActivity : AppCompatActivity(), RecyclerViewAdapter.Listener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         val filterButton:ImageButton=findViewById(R.id.filterButton)
         searchView=findViewById(R.id.searchView)
         val recycler_view:RecyclerView=findViewById(R.id.recycler_view)
@@ -52,9 +52,13 @@ class MainActivity : AppCompatActivity(), RecyclerViewAdapter.Listener {
         recycler_view.layoutManager=GridLayoutManager(this,3)
 //        val brandAdapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item)
 //        val modelAdapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item)
-
+           val sepetListButton=findViewById<ImageButton>(R.id.sepetListButton)
     loadData() //alta alınabilir
+        sepetListButton.setOnClickListener{
 
+            val intent = Intent(this, CardActivity::class.java)
+            startActivity(intent)
+        }
         searchView.setOnQueryTextListener(object:SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
             return false

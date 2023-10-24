@@ -35,23 +35,17 @@ class RecyclerViewAdapter(private var productList:ArrayList<ProductModel>,privat
             productPrice.text="${productModel.price}₺".toString()
             val imageUrl=productModel.image
             Glide.with(itemView.context).load(imageUrl).into(productImage)
-
-
-
         }
 
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RowHolder {
     val view =LayoutInflater.from(parent.context).inflate(R.layout.product_card,parent,false)
     return RowHolder(view)
     }
-
     override fun getItemCount(): Int {
         return productList.count()
 
     }
-
     override fun onBindViewHolder(holder: RowHolder, position: Int) {
         holder.bind(productList[position],colors,position,listener)
 
