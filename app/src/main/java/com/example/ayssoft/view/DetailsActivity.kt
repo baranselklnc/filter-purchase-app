@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide
 import com.example.ayssoft.R
 import com.example.ayssoft.adapter.SepetAdapter
 import com.example.ayssoft.model.ProductModel
+import com.google.gson.Gson
 
 class DetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,7 +50,8 @@ class DetailsActivity : AppCompatActivity() {
                 sepetAdapter.notifyDataSetChanged()
                 Toast.makeText(this, "Ürün sepete eklendi", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, CardActivity::class.java)
-                intent.putParcelableArrayListExtra("sepetList", ArrayList(sepetList)) // Sepet listesini CardActivity'e aktarın
+                val sepetJson=Gson().toJson(sepetList)
+                intent.putExtra("sepetList", sepetJson)
                 startActivity(intent)
             }
             else{
