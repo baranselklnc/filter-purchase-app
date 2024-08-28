@@ -1,9 +1,6 @@
 
 
-*Günaydın Enes Bey*
 
-*Vermiş olduğunuz task'ın sepet işlemleri dışında keyifli geçtiğini söyleyebilirim. Bilginize süre dahilinde herhangi bir kişi-kuruluştan yardım almadığımı (hak geçmemesi adına) belirtmek istiyorum.  Daha iyilerini bünyenizde birlikte yapmak dileğiyle. Selametle...* 🚀
-# AysSoft
 
 ## Kullanılan Teknolojiler
 
